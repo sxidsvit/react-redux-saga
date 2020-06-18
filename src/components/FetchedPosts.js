@@ -9,7 +9,6 @@ export default () => {
   const dispatch = useDispatch()
   const posts = useSelector(state => state.posts.fetchedPosts)
   const loading = useSelector(state => state.app.loading)
-  console.log('FetchedPosts - loading: ', loading);
 
   if (loading) {
     return <Loader />
